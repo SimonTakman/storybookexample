@@ -4,7 +4,9 @@ import "./Button.scss";
 export function Button(props) {
   return (
     <div>
-      <button className="action">{props.children}</button>
+      <button className="action" disabled={props.disabled}>
+        {props.children}
+      </button>
     </div>
   );
 }
